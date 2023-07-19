@@ -14,8 +14,7 @@ current shell, so it can't change the environment of the shell that started it.
 This limitation is shared by other task runners and build tools too.
 
 A common way to work around this is to create a task that will generate output
-that can be parsed by your shell. For example, to set an environment variable on
-your shell you can write a task like this:
+that can be parsed by your shell. For example, to set an environment variable on your shell you can write a task like this:
 
 ```yaml
 my-shell-env:
