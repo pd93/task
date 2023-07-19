@@ -28,5 +28,5 @@ jobs:
         with:
           dry: True
           file_pattern: '**/*.{js,md,yaml}'
-          prettier_options: --check --config .prettierrc.yml
+          prettier_options: --check --config .prettierrc.yml .
           github_token: ${{secrets.GH_PAT}}
