@@ -27,6 +27,6 @@ jobs:
         uses: creyD/prettier_action@v4.3
         with:
           dry: True
-          file_pattern: '**/*.{js,md,yaml}'
+          file_pattern: '**/*.{js,md,yaml,yml,json}'
           prettier_options: --check --config .prettierrc.yml .
           github_token: ${{secrets.GH_PAT}}
