@@ -22,3 +22,9 @@ jobs:
         uses: golangci/golangci-lint-action@v3
         with:
           version: v1.51.1
+
+      - name: prettier
+        uses: creyD/prettier_action@v4.3
+        with:
+          dry: True
+          github_token: ${{secrets.GH_PAT}}
