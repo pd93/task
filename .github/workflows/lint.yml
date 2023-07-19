@@ -27,5 +27,5 @@ jobs:
         uses: creyD/prettier_action@v4.3
         with:
           dry: True
-          prettier_options: --config .prettierrc.yml
+          prettier_options: --check --config .prettierrc.yml
           github_token: ${{secrets.GH_PAT}}
