@@ -22,3 +22,11 @@ jobs:
         uses: golangci/golangci-lint-action@v3
         with:
           version: v1.51.1
+
+      - name: prettier
+        uses: creyD/prettier_action@v4.3
+        with:
+          dry: True
+          file_pattern: '**/*.{js,md,yaml,yml,json}'
+          prettier_options: --check --config .prettierrc.yml .
+          github_token: ${{secrets.GH_PAT}}
